@@ -1,0 +1,24 @@
+<section class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>Peliculas</h1>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a routerLink="/">Inicio</a></li>
+          <li class="breadcrumb-item active">Peliculas</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-12">
+            <app-searcher [placeholder]="'Escribe el nombre de la pelicula'"
+            (moviesSelected)="onMovieSelected($event)"></app-searcher>
+        </div>
+    </div>
+</div>
+
