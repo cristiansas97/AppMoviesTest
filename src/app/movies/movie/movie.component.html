@@ -1,1 +1,31 @@
-<p>movie works!</p>
+<section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Peliculas</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a routerLink="/movies">Peliculas</a></li>
+            <li class="breadcrumb-item active">{{movie.title}}</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="row">
+    <div class="col-md-6">
+        <img class="img-fluid" src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
+    </div>
+    <div class="col-md-6">
+        <h3>{{movie.title}}</h3>
+        <p>{{movie.release_date}}</p>
+        <p>{{movie.homepage}}</p>
+        <h3>Resumen</h3>
+        <p>{{movie.overview}}</p>
+        <p>
+            <span><i class="far fa-heart"></i></span>
+            <span>{{movie.vote_average}}</span>
+        </p>
+    </div>
+</div>

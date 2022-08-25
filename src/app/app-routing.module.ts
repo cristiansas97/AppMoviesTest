@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MoviesComponent } from './movies/movies.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'movies', component: MoviesComponent},
   {path: 'movies/details/:id', component: MovieComponent}
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
